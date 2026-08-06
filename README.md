@@ -48,9 +48,9 @@ alguém tente chamar a API do Supabase diretamente, sem passar pela tela.
 O `.env.local` já vem preenchido com as credenciais do projeto Supabase combinado:
 
 ```
-NEXT_PUBLIC_SUPABASE_URL=https://vogsfpymvzftsxfxmgsu.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_Oz9jHChPwm4hE-4anQVOCw_IaHFnDAr
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_PUBLIC_SITE_URL=
 ```
 
 Se for usar outro projeto Supabase, edite esses valores. `NEXT_PUBLIC_SITE_URL` é o domínio
