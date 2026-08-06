@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream-200 text-ink font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .paper-texture {
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(43,35,32,0.045) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  .ticket-notch {
+    position: relative;
+  }
+  .ticket-notch::before,
+  .ticket-notch::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: #F8F2E4;
+    border-radius: 9999px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .ticket-notch::before { left: -13px; }
+  .ticket-notch::after { right: -13px; }
+
+  .gold-shimmer {
+    background: linear-gradient(110deg, #8C6D1F 20%, #E4C874 45%, #F3E6C4 50%, #E4C874 55%, #8C6D1F 80%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+
+  .divider-dashed {
+    background-image: repeating-linear-gradient(to right, rgba(184,145,47,0.6) 0, rgba(184,145,47,0.6) 8px, transparent 8px, transparent 16px);
+    height: 2px;
+  }
+}
