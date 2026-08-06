@@ -43,22 +43,7 @@ shadcn/ui · Framer Motion
 Isso é garantido pelas *policies* do Postgres (Row Level Security), então vale mesmo que
 alguém tente chamar a API do Supabase diretamente, sem passar pela tela.
 
-## 2. Configurar o projeto
-
-O `.env.local` já vem preenchido com as credenciais do projeto Supabase combinado:
-
-```
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-NEXT_PUBLIC_SITE_URL=
-```
-
-Se for usar outro projeto Supabase, edite esses valores. `NEXT_PUBLIC_SITE_URL` é o domínio
-onde o app vai rodar em produção — é o que entra dentro do QR Code
-(`https://meusite.com/ticket/CODIGO`). Em desenvolvimento local, deixe
-`http://localhost:3000`.
-
-## 3. Rodar localmente
+## 2. Rodar localmente
 
 ```bash
 npm install
