@@ -24,8 +24,7 @@ shadcn/ui · Framer Motion
    (imagens de capa) e as políticas de acesso (RLS) descritas abaixo.
    > Idempotente: se você já tinha rodado uma versão anterior, pode rodar de novo sem
    > problema.
-3. Em **Settings → API**, copie a **Project URL** e a **anon / publishable key** (já
-   preenchidas no `.env.local` deste projeto, veja o passo 2).
+3. Em **Settings → API**, copie a **Project URL** e a **anon / publishable key**
 4. (Recomendado) Em **Authentication → Sign In / Providers → Email**, desative a opção
    **"Confirm email"**. Assim, quando alguém se cadastrar pelo `/signup`, já consegue entrar
    na hora — sem isso, o Supabase manda um e-mail de confirmação antes de liberar o login.
